@@ -5,8 +5,8 @@
 **Backend (Render):** [https://your-backend-app.onrender.com](https://your-backend-app.onrender.com) *(Update this after Render deployment)*
 
 ### Admin Demo Credentials
-- **Username:** admin
-- **Password:** admin123
+- **Username:** khushi
+- **Password:** khushiverse08
 
 ### Test Payment Instructions
 - Add an item to your cart and proceed to Checkout.
