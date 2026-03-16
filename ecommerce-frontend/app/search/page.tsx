@@ -1,10 +1,10 @@
 "use client"
 
 import { useSearchParams } from "next/navigation"
-import { useEffect, useState } from "react"
+import { Suspense, useEffect, useState } from "react"
 import Link from "next/link"
 
-export default function SearchPage() {
+function SearchContent() {
   const params = useSearchParams()
   const query = params.get("q")
 
@@ -47,5 +47,13 @@ export default function SearchPage() {
         ))}
       </div>
     </div>
+  )
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 text-sm text-gray-500">Loading search...</div>}>
+      <SearchContent />
+    </Suspense>
   )
 }
